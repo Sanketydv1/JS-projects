@@ -1,10 +1,16 @@
-const arrow = (a, b) => {
-  console.log(a + b);
-};
-
-const arrow2 = (a, b) => {
-  console.log(a * b);
-};
-
-arrow(2, 5);
-arrow2(6, 9);
+function countVowel(str) {
+  let count = 0;
+  for (const char of str) {
+    if (
+      char == "a" ||
+      char == "e" ||
+      char == "i" ||
+      char == "o" ||
+      char == "o" ||
+      char == "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
+}
